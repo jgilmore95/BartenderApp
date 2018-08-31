@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 align="center">Bartender Application</h1>
+
+
+<table width="60%" align="center">
+<tr>
+    <td align="center">
+        <select style="width: 300px;" onchange="location = this.options[this.selectedIndex].value;">
+            
+            <option disabled="disabled" selected="selected">Please Select Option</option>
+
+            <option value="/Cocktail/OrderOption">Order</option>
+
+            <option value="/Cocktail/OrderQueue">View the drink queue</option>
+        </select>
+    </td>
+</tr>
+</table>

@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model BartenderApp.Models.CocktailMenu
+<h1 align="center">Drink Menu</h1>
+
+  
+    <form class="p-a-1" asp-action="OrderOption" method="post" width="50%">
+        <div class="form-group">
+            <img src="~/images/mojito.jpg" width="300" height="250" />
+            
+            <label asp-for="optMoj">Mojito 19$</label>
+            
+            <input class="form-control-sm" asp-for="optMoj" placeholder="Enter Quantity" />
+        </div>
+        <div class="form-group">
+            <img src="~/images/rumAndcoke.jpg" width="300" height="250" />
+            <label asp-for="optRum"> Rum and Coke $8</label>
+            <input class="form-control-sm" asp-for="optRum" placeholder="Enter Quantitiy" />
+        </div>
+        <div class="form-group">
+            <img src="~/images/screwdriver.jpg" width="300" height="250" />
+            <label asp-for="optScrew">Screw Driver $11</label>
+            <input class="form-control-sm" asp-for="optScrew" placeholder="Enter Quantity" />
+        </div>
+        <div class="form-group">
+            <img src="~/images/vodka.jpeg" width="300" height="250"  />
+            <label asp-for="optVod">Vodka and Cranberry $10</label>
+            <input class="form-control-sm" asp-for="optVod" placeholder="Enter Quantity" />
+        </div>
+    <div class="text-center">
+        <input type="submit" value="Submit" />
+    </div>
+</form>
